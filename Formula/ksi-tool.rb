@@ -7,9 +7,6 @@ class KsiTool < Formula
   url "https://github.com/guardtime/ksi-tool/archive/v2.4.1038.tar.gz"
   sha256 "c551b0f0b2db7b79bb756dcef56eeae4a955d259daf679523108995c417f6198"
 
-  depends_on "automake" => :build
-  depends_on "autoconf" => :build
-  depends_on "libtool" => :build
   depends_on "libksi" => :build
 
 
