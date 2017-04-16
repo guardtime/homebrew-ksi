@@ -3,8 +3,8 @@
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 
 class KsiTool < Formula
-  desc ""
-  homepage ""
+  desc "CLI for Keyless Signature Infrastructure (c) Guardtime"
+  homepage "https://github.com/guardtime/ksi-tool"
   url "https://github.com/guardtime/ksi-tool/archive/v2.4.1038.tar.gz"
   sha256 "c551b0f0b2db7b79bb756dcef56eeae4a955d259daf679523108995c417f6198"
 
