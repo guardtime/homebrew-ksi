@@ -6,6 +6,7 @@ class Libksi < Formula
   homepage "https://github.com/guardtime/libksi"
   url "https://github.com/guardtime/libksi/archive/v3.13.2043.tar.gz"
   sha256 "2d51458a5429e6e3d7bec539282a7e58f90b6ef19c63df775f1ec6fa2e5914c8"
+  revision 2
 
   depends_on "automake" => :build
   depends_on "autoconf" => :build
