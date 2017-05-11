@@ -12,7 +12,9 @@ class Libksi < Formula
   depends_on "libtool" => :build
 
   def install
-    system "./rebuild.sh", "--prefix=#{prefix}"
+    system "autoreconf", "-if"
+    system "./configure", "--prefix=#{prefix}"
+    # system "./rebuild.sh", "--prefix=#{prefix}"
     system "make", "install"
   end
 
