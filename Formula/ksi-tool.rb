@@ -4,9 +4,9 @@
 class KsiTool < Formula
   desc "CLI for Keyless Signature Infrastructure (c) Guardtime"
   homepage "https://github.com/guardtime/ksi-tool"
-  url "https://github.com/guardtime/ksi-tool/archive/v2.4.1038.tar.gz"
-  sha256 "c551b0f0b2db7b79bb756dcef56eeae4a955d259daf679523108995c417f6198"
-  revision 2
+  url "https://github.com/guardtime/ksi-tool/archive/v2.5.1125.tar.gz"
+  sha256 "679fcd81783f5fdff2786c4a3b75fdd9071c5f9dba2d75da9eed3ece5bd60ccd"
+  # revision 2
 
   depends_on "automake" => :build
   depends_on "autoconf" => :build
@@ -15,7 +15,9 @@ class KsiTool < Formula
 
 
   def install
-    system "./rebuild.sh", "--prefix=#{prefix}"
+    system "autoreconf", "-if"
+    system "./configure", "--prefix=#{prefix}"
+    # system "./rebuild.sh", "--prefix=#{prefix}"
     system "make", "install"
   end
 
