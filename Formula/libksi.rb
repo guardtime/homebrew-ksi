@@ -6,7 +6,7 @@ class Libksi < Formula
   homepage "https://github.com/guardtime/libksi"
   url "https://github.com/guardtime/libksi/archive/v3.13.2043.tar.gz"
   sha256 "2d51458a5429e6e3d7bec539282a7e58f90b6ef19c63df775f1ec6fa2e5914c8"
-  revision 3
+  revision 4
 
   depends_on "automake" => :build
   depends_on "autoconf" => :build
@@ -14,7 +14,7 @@ class Libksi < Formula
 
   def install
     system "autoreconf", "-if"
-    system "./configure", "--prefix=#{prefix} -I/usr/local/opt/openssl/include -L/usr/local/opt/openssl/lib"
+    system "./configure", "--prefix=#{prefix} --with-oppenssl=/usr/local/opt/openssl"
     # system "./rebuild.sh", "--prefix=#{prefix}"
     system "make", "install"
   end
