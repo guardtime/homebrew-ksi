@@ -4,8 +4,8 @@
 class Libksi < Formula
   desc "C SDK for Keyless Signature Infrastructure (c) Guardtime"
   homepage "https://github.com/guardtime/libksi"
-  url "https://github.com/guardtime/libksi/archive/v3.14.2207.tar.gz"
-  sha256 "f9776f2bf1ce08caf3efe39dbdeb0aea797243aceb4620040ef2c2997129fa1d"
+  url "https://github.com/guardtime/libksi/archive/v3.15.2306.tar.gz"
+  sha256 "09a173f2101db4dc6d31e535850d6bfdeb9478bfbb96baae506c9842d24dda41"
   # revision 7
 
   depends_on "automake" => :build
