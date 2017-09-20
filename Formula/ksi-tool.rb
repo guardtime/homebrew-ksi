@@ -6,7 +6,7 @@ class KsiTool < Formula
   homepage "https://github.com/guardtime/ksi-tool"
   url "https://github.com/guardtime/ksi-tool/archive/v2.6.1136.tar.gz"
   sha256 "915c51380c9b1217c7633d88308f7d79564d837775e88754909548e509fe2d63"
-  # revision 2
+  revision 2
 
   depends_on "automake" => :build
   depends_on "autoconf" => :build
@@ -16,7 +16,7 @@ class KsiTool < Formula
 
   def install
     system "autoreconf", "-if"
-    system "./configure", "--prefix=#{prefix}"
+    system "./configure", "--prefix=#{prefix} --with-openssl=/usr/local/opt"
     # system "./rebuild.sh", "--prefix=#{prefix}"
     system "make", "install"
   end
