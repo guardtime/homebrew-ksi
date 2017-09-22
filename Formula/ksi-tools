@@ -1,7 +1,7 @@
 # Documentation: http://docs.brew.sh/Formula-Cookbook.html
 #                http://www.rubydoc.info/github/Homebrew/brew/master/Formula
 
-class KsiTool < Formula
+class KsiTools < Formula
   desc "CLI for Keyless Signature Infrastructure (c) Guardtime"
   homepage "https://github.com/guardtime/ksi-tool"
   url "https://github.com/guardtime/ksi-tool/archive/v2.6.1136.tar.gz"
@@ -16,8 +16,9 @@ class KsiTool < Formula
 
   def install
     system "autoreconf", "-if"
-    system "./configure", "--prefix=#{prefix}"
-    # system "./rebuild.sh", "--prefix=#{prefix}"
+    system "./configure", "--disable-dependency-tracking",
+                          "--disable-silent-rules",
+                          "--prefix=#{prefix}"
     system "make", "install"
   end
 

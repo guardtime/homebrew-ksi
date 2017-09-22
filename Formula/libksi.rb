@@ -6,6 +6,8 @@ class Libksi < Formula
   homepage "https://github.com/guardtime/libksi"
   url "https://github.com/guardtime/libksi/archive/v3.15.2306.tar.gz"
   sha256 "09a173f2101db4dc6d31e535850d6bfdeb9478bfbb96baae506c9842d24dda41"
+
+# Change revision if there is need to recompile the formula.
   revision 3
 
   depends_on "automake" => :build
@@ -15,12 +17,27 @@ class Libksi < Formula
 
   def install
     system "autoreconf", "-if"
-    system "./configure", "--prefix=#{prefix}"
-    # system "./rebuild.sh", "--prefix=#{prefix}"
+    system "./configure", "--disable-dependency-tracking",
+                          "--disable-silent-rules",
+                          "--prefix=#{prefix}"
     system "make", "install"
+
   end
 
   test do
-    system "false"
+    (testpath/"test.c").write <<-EOS.undent
+      #include <ksi/ksi.h>
+      #include <assert.h>
+      int main()
+      {
+        KSI_CTX *ksi = NULL;
+        assert(KSI_CTX_new(&ksi) == KSI_OK);
+        KSI_CTX_free(ksi);
+        return 0;
+      }
+    EOS
+    system ENV.cc, "test.c", "-I#{include}", "-L#{lib}",
+                   "-lksi", "-o", "test"
+    system "./test"
   end
 end
