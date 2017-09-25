@@ -10,4 +10,4 @@ $ brew install Guardtime/homebrew-ksi/{formula_name}
 
 ### Available Formula
 * libksi
-* ksi-tool
+* ksi-tools
