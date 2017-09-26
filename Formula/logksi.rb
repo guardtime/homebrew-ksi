@@ -1,13 +1,13 @@
-class KsiTools < Formula
-  desc "CLI for Keyless Signature Infrastructure (c) Guardtime"
-  homepage "https://github.com/guardtime/ksi-tool"
-  url "https://github.com/guardtime/ksi-tool/archive/v2.6.1136.tar.gz"
-  sha256 "915c51380c9b1217c7633d88308f7d79564d837775e88754909548e509fe2d63"
+class Logksi < Formula
+  desc "Log signature command-line tool for Keyless Signature Infrastructure (c) Guardtime"
+  homepage "https://github.com/guardtime/logksi"
+  url "https://github.com/guardtime/logksi/archive/v1.1.249.tar.gz"
+  sha256 "01d68d38d908b0c6b7cc9de6355fae8ddaaeb341a31a6fa89c73819ee8816e27"
 
-  # Change revision if there is a need to recompile the formula
+  # Change revision if there is a need to recompile the formula 
   # and the version of the package is not changed. If version
   # changes comment 'revision' field out.
-  revision 3
+  # revision 1
 
   depends_on "automake" => :build
   depends_on "autoconf" => :build
@@ -23,6 +23,6 @@ class KsiTools < Formula
   end
 
   test do
-    system "#{bin}/ksi", "-h"
+    system "#{bin}/logksi", "-h"
   end
 end
