@@ -1,8 +1,8 @@
 class Logksi < Formula
   desc "Log signature command-line tool for Keyless Signature Infrastructure (c) Guardtime"
   homepage "https://github.com/guardtime/logksi"
-  url "https://github.com/guardtime/logksi/archive/v1.1.249.tar.gz"
-  sha256 "01d68d38d908b0c6b7cc9de6355fae8ddaaeb341a31a6fa89c73819ee8816e27"
+  url "https://github.com/guardtime/logksi/archive/v1.1.258.tar.gz"
+  sha256 "767ade65eebb78e7875a81aa146770a364beff93925d5a50e9999325210e27bf"
 
   # Change revision if there is a need to recompile the formula 
   # and the version of the package is not changed. If version
