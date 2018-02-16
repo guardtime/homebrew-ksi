@@ -1,0 +1,5 @@
+# Files that are text files. Line endings are normalized when pushed to
+# repository. Line endings in working tree are as specified.
+*.sh          text eol=lf
+*.rb          text eol=lf
+
