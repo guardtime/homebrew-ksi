@@ -7,11 +7,9 @@ There are many applications for KSI, a classical example is signing of any type 
 This repository hosts the KSI libraries and tools aimed at OS X users.
 
 
-## INSTALLATION
+## AVAILABLE FORMULA
 
-### Available Formula
-
-The following KSI libraries and tools are available, link to the original (RHEL/CentOS oriented) **usage instructions** is added in parenthesis:
+The following KSI libraries and tools are available, link to the **usage instructions** is added in parenthesis:
 
 * `ksi-tools` ([https://github.com/guardtime/ksi-tool](https://github.com/guardtime/ksi-tool))
 * `libksi` ([https://github.com/guardtime/libksi](https://github.com/guardtime/libksi))
@@ -20,7 +18,7 @@ The following KSI libraries and tools are available, link to the original (RHEL/
 
 Note, that the usage instructions on their original GitHub pages are created with RHEL/CentOS users in mind.
 
-### From Homebrew Tap
+## INSTALLATION
 
 For installation, add a new tap and then install the formula you're interested in:
 
@@ -34,13 +32,10 @@ Or install the formula without adding a new tap:
 brew install Guardtime/homebrew-ksi/{formula_name}
 ```
 
-### Updating
-
-Use script `rebuild_homebrew.sh` to check for updates.
-
-When new formulas are added, consult `rebuild_formulas.sh` help (call without parameters) to learn how to configure `rebuild_homebrew.sh` to check new repositories for updates.
-
-Note that `revision` must be handled manually (in most cases it is not used at all).
+For upgrade:
+```
+brew upgrade {formula}
+```
 
 
 ## LICENSE
