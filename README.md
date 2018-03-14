@@ -1,25 +1,55 @@
-# Welcome
+# Homebrew KSI
 
-This is a homebrew tap for KSI libraries and tools aimed at OSX users.
+Guardtime's KSI Blockchain is an industrial scale blockchain platform that cryptographically ensures data integrity and proves time of existence. Its keyless signatures, based on hash chains, link data to global calendar blockchain. The checkpoints of the blockchain, published in newspapers and electronic media, enable long term integrity of any digital asset without the need to trust any system. For more, see [https://guardtime.com](https://guardtime.com)
 
-install formula like this by adding a new tap:
+This repository hosts the libraries and tools aimed at OS X users.
+
+
+## AVAILABLE FORMULA
+
+The following libraries and tools are available, link to the **usage instructions** is added in parenthesis:
+
+* `ksi-tools` ([https://github.com/guardtime/ksi-tool](https://github.com/guardtime/ksi-tool))
+* `libksi` ([https://github.com/guardtime/libksi](https://github.com/guardtime/libksi))
+* `libparamset` ([https://github.com/guardtime/libparamset](https://github.com/guardtime/libparamset))
+* `logksi` ([https://github.com/guardtime/logksi](https://github.com/guardtime/logksi))
+
+Note, that the usage instructions on their original GitHub pages are created with RHEL/CentOS users in mind.
+
+
+## INSTALLATION
+
+For installation, add a new tap and then install the formula you're interested in:
 
 ```
 brew tap guardtime/ksi
 brew install {formula_name}
 ```
 
-or use this command to install formula without adding a new tap:
+Or install the formula without adding a new tap:
 ```
-brew install Guardtime/homebrew-ksi/{formula_name}
+brew install guardtime/homebrew-ksi/{formula_name}
 ```
 
-### Available Formula
-* ksi-tools
-* libksi
-* libparamset
-* logksi
 
-### Updating
+## UPGRADE
 
-Use script `rebuild_homebrew.sh` to check for updates. When new formulas are added, consult `rebuild_formulas.sh` help (call without parameters), to learn how to configure `rebuild_homebrew.sh` to check new repositories for updates. Note that `revision` must be handled manually (in most cases it is not used at all).
+To upgrade the formula:
+```
+brew upgrade {formula_name}
+```
+
+Or without the tap:
+```
+brew upgrade guardtime/homebrew-ksi/{formula_name}
+```
+
+
+## LICENSE
+
+See `LICENSE` file.
+
+
+## CONTRIBUTING
+
+See `CONTRIBUTING.md` file.
