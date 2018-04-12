@@ -1,8 +1,8 @@
 class Libparamset < Formula
   desc "C SDK for handling command-line parameters and program tasks"
   homepage "https://github.com/guardtime/libparamset"
-  url "https://github.com/guardtime/libparamset/archive/v1.0.216.tar.gz"
-  sha256 "6084391ee10d9aa18a6b757816bcae0701e79de578276844d3cb6bdf2dfcef0c"
+  url "https://github.com/guardtime/libparamset/archive/v1.1.240.tar.gz"
+  sha256 "fe7f3216c62cc52f5379a9a2d2b58bb34dc64c33d29bedc1c4b77783699d2cf2"
 
   depends_on "autoconf" => :build
   depends_on "automake" => :build
