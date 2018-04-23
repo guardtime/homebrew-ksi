@@ -1,18 +1,19 @@
 class KsiTools < Formula
   desc "CLI for Keyless Signature Infrastructure (c) Guardtime"
   homepage "https://github.com/guardtime/ksi-tool"
-  url "https://github.com/guardtime/ksi-tool/archive/v2.7.1200.tar.gz"
-  sha256 "544bb2569752ac09e41e827e7412f9d612ae57f895d06e29bd0f056ce08fc3ec"
+  url "https://github.com/guardtime/ksi-tool/archive/v2.8.1300.tar.gz"
+  sha256 "ffbe0f37233a6ade5c72618a9f8f389c400ec81c01333ecb4f60c79fe9ae0f30"
 
   # Change revision if there is a need to recompile the formula
   # and the version of the package is not changed. If version
   # changes comment 'revision' field out.
-  revision 4
+  # revision 1
 
   depends_on "automake" => :build
   depends_on "autoconf" => :build
   depends_on "libtool" => :build
-  depends_on "libksi" => :run
+  depends_on "libparamset"
+  depends_on "libksi"
 
   def install
     system "autoreconf", "-if"
