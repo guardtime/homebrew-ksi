@@ -9,6 +9,7 @@ This repository hosts the libraries and tools aimed at OS X users.
 
 The following libraries and tools are available, link to the **usage instructions** is added in parenthesis:
 
+* `gttlvutil` ([https://github.com/guardtime/gttlvutil](https://github.com/guardtime/gttlvutil))
 * `ksi-tools` ([https://github.com/guardtime/ksi-tool](https://github.com/guardtime/ksi-tool))
 * `libksi` ([https://github.com/guardtime/libksi](https://github.com/guardtime/libksi))
 * `libparamset` ([https://github.com/guardtime/libparamset](https://github.com/guardtime/libparamset))
