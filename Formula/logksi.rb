@@ -12,7 +12,7 @@ class Logksi < Formula
   depends_on "automake" => :build
   depends_on "autoconf" => :build
   depends_on "libtool" => :build
-  depends_on "libksi" => :run
+  depends_on "libksi"
 
   def install
     system "autoreconf", "-if"
