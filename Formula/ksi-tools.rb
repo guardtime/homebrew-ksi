@@ -7,7 +7,7 @@ class KsiTools < Formula
   # Change revision if there is a need to recompile the formula
   # and the version of the package is not changed. If version
   # changes comment 'revision' field out.
-  # revision 1
+  revision 1
 
   depends_on "automake" => :build
   depends_on "autoconf" => :build
