@@ -1,13 +1,13 @@
 class Libksi < Formula
   desc "C SDK for Keyless Signature Infrastructure (c) Guardtime"
   homepage "https://github.com/guardtime/libksi"
-  url "https://github.com/guardtime/libksi/archive/v3.18.2836.tar.gz"
-  sha256 "b13bb07c212873fbc95a1550c3d75d9f5203e94ff8d2e0bb8856de81eee74477"
+  url "https://github.com/guardtime/libksi/archive/v3.19.2939.tar.gz"
+  sha256 "112773658cb9d957c5798153372c98bfed2b2b439ffa4d90182255a6da116c14"
 
   # Change revision if there is a need to recompile the formula
   # and the version of the package is not changed. If version
   # changes comment 'revision' field out.
-  revision 3
+  # revision 1
 
   depends_on "automake" => :build
   depends_on "autoconf" => :build
