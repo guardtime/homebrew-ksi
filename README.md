@@ -11,6 +11,7 @@ The following libraries and tools are available, link to the **usage instruction
 
 * `gttlvutil` ([https://github.com/guardtime/gttlvutil](https://github.com/guardtime/gttlvutil))
 * `ksi-tools` ([https://github.com/guardtime/ksi-tool](https://github.com/guardtime/ksi-tool))
+* `libgtrfc3161` ([https://github.com/guardtime/libgtrfc3161](https://github.com/guardtime/libgtrfc3161))
 * `libksi` ([https://github.com/guardtime/libksi](https://github.com/guardtime/libksi))
 * `libparamset` ([https://github.com/guardtime/libparamset](https://github.com/guardtime/libparamset))
 * `logksi` ([https://github.com/guardtime/logksi](https://github.com/guardtime/logksi))
