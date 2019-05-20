@@ -24,4 +24,4 @@
 ./rebuild_formulas.sh guardtime/logksi v ./Formula/logksi.rb
 ./rebuild_formulas.sh guardtime/libparamset v ./Formula/libparamset.rb
 ./rebuild_formulas.sh guardtime/gttlvutil v ./Formula/gttlvutil.rb
-
+./rebuild_formulas.sh guardtime/libgtrfc3161 v ./Formula/libgtrfc3161.rb
