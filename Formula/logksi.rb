@@ -1,8 +1,8 @@
 class Logksi < Formula
   desc "Log signature command-line tool for Keyless Signature Infrastructure (c) Guardtime"
   homepage "https://github.com/guardtime/logksi"
-  url "https://github.com/guardtime/logksi/archive/v1.3.396.tar.gz"
-  sha256 "864fe38c1377b5f74da6795fc41f7aacdae8429d50be8cac5e97b768c85874e2"
+  url "https://github.com/guardtime/logksi/archive/v1.4.518.tar.gz"
+  sha256 "dacda8803e283015adc343008605396275d657d86abd73277f540b93f08bc783"
 
   # Change revision if there is a need to recompile the formula 
   # and the version of the package is not changed. If version
@@ -13,6 +13,7 @@ class Logksi < Formula
   depends_on "autoconf" => :build
   depends_on "libtool" => :build
   depends_on "libksi"
+  depends_on "libgtrfc3161"
 
   def install
     system "autoreconf", "-if"
